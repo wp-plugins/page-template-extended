@@ -4,7 +4,7 @@ Donate link: http://wp-plugins.dk/pte
 Tags: templates, page template, is_page, page, parent, subpage, template hierarchy, danish
 Requires at least: 2.5
 Tested up to: 2.5.1
-Stable tag: 1.1
+Stable tag: 1.1.0.1
 
 Create templates for a specific page by its ID - like categories.
 Subpages inherit templates from their parents.
