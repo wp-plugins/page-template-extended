@@ -4,7 +4,7 @@ Donate link: http://wp-plugins.dk/pte
 Tags: templates, page template, is_page, page, parent, subpage, template hierarchy, danish
 Requires at least: 2.5
 Tested up to: 2.5.1
-Stable tag: 1.1.0.1
+Stable tag: 1.1.1
 
 Create templates for a specific page by its ID - like categories.
 Subpages inherit templates from their parents.
@@ -20,7 +20,9 @@ It will look at the first parent for the template, if it doesn't exist it will l
 So you can assign a template for the first level and fifth level. If you do so, level 1-4 would have the same page template and 5-6 a different page template.
 
 Its planned to include the build-in template structure.
- 
+
+Italian language files by [Gianni Diurno](http://gidibao.net/ "Go to http://gidibao.net/")
+
 == Installation ==
 
 1. Upload the `page-template-ex` folder to the `/wp-content/plugins/` directory
