@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Page Template Extended\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2008-05-06 09:14+0100\n"
-"PO-Revision-Date: 2008-05-06 09:15+0100\n"
+"POT-Creation-Date: 2008-05-06 13:28+0100\n"
+"PO-Revision-Date: 2008-05-06 13:29+0100\n"
 "Last-Translator: Thomas Blomberg Hansen <playr@playr.dk>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -35,7 +35,7 @@ msgid "No"
 msgstr ""
 
 #: /Users/Thomas/Sites/WP plugins/page-template-ex/pagetemplate_ex.php:135
-msgid "Maybe, I should use the \"Page Template\" option instead ;)"
+msgid "Maybe, you should use the default \"Page Template\" option instead"
 msgstr ""
 
 #: /Users/Thomas/Sites/WP plugins/page-template-ex/pagetemplate_ex.php:141

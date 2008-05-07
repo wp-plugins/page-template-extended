@@ -4,7 +4,7 @@ Plugin Name: Page Template Extended
 Plugin URI: http://wp-plugins.dk/pte
 Description: Makes it possible to create templates for a specific page by its ID - like categories. If the page hasn't a template assigned and its a subpage, the parent page template will be used if it exists.
 Author: Thomas Blomberg Hansen
-Version: 1.1.0.1
+Version: 1.1.1
 Author URI: http://wp-plugins.dk/
 */
 
@@ -127,18 +127,18 @@ function optionspage_page_template_ex () {
         <p><?php _e('- If it exists and the subpage hasn\'t a template set.','pagetemplate_ex'); ?></p>
         <table class="form-table">
             <tr valign="top">
-                <th scope="row"><label for="page_template_ex_input_yes"><?php _e('Yes'); ?></label></th>
+                <th scope="row"><label for="page_template_ex_input_yes"><?php _e('Yes','pagetemplate_ex'); ?></label></th>
                 <td><input type="radio" value="1" name="pte_use_parent_template" id="page_template_ex_input_yes" <?php echo $page_template_ex_input_yes_selected; ?> tabindex="1" /></td>
             </tr>
             <tr valign="top">
-                <th scope="row"><label for="page_template_ex_input_no"><?php _e('No'); ?></label></th>
-                <td><input type="radio" value="0" name="pte_use_parent_template" id="page_template_ex_input_no" <?php echo $page_template_ex_input_no_selected; ?> tabindex="2" /> <em>(<?php _e('Maybe, I should use the "Page Template" option instead ;)','pagetemplate_ex'); ?>)</em></td>
+                <th scope="row"><label for="page_template_ex_input_no"><?php _e('No','pagetemplate_ex'); ?></label></th>
+                <td><input type="radio" value="0" name="pte_use_parent_template" id="page_template_ex_input_no" <?php echo $page_template_ex_input_no_selected; ?> tabindex="2" /> <em>(<?php _e('Maybe, you should use the default "Page Template" option instead','pagetemplate_ex'); ?>)</em></td>
             </tr>
         </table>
         <p class="submit">
             <input type="hidden" name="action" value="update" />
             <input type="hidden" name="page_options" value="pte_use_parent_template" />
-            <input type="submit" name="Submit" value="<?php _e('Save Changes'); ?>" tabindex="3" />
+            <input type="submit" name="Submit" value="<?php _e('Save Changes','pagetemplate_ex'); ?>" tabindex="3" />
         </p>
     
     </form>
@@ -151,13 +151,13 @@ function update_page_template_ex_options () {
 		update_option('pte_use_parent_template',$_REQUEST['pte_use_parent_template']);
 		?>
         <div id="message" class="updated fade">
-        	<p><?php _e('Options saved.'); ?></p>
+        	<p><?php _e('Options saved.','pagetemplate_ex'); ?></p>
 		</div>
         <?php
 	} else {
 		?>
         <div id="message" class="error fade">
-        	<p><?php _e('Failed to save options.'); ?></p>
+        	<p><?php _e('Failed to save options.','pagetemplate_ex'); ?></p>
 		</div>
         <?php
 	}
